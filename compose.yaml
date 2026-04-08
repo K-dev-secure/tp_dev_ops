@@ -1,0 +1,12 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - "40221:1994"
+    restart: always
+
+  front:
+    build: ./front
+    ports:
+      - "40211:5173" 
+    restart: always
